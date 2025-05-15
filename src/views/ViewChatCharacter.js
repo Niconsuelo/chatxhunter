@@ -1,7 +1,6 @@
 import dataset from '../data/dataset.js';
 import { timeClock } from '../lib/extraFunctions.js';
 import { communicateWithOpenAI } from '../lib/openAIAPI.js';
-// Para poder renderizar las propiedades específicas del personaje q le hagamos click, aquí debemos acceder a la data
 export const chatCharacter = (props) => {
   let characterObject = {};
   dataset.forEach(character => {
@@ -71,11 +70,9 @@ export const chatCharacter = (props) => {
         </div>
         `
         formChat.innerHTML = formChat.innerHTML + systemChat;
-        // Scroll baja cada en cada ejecución del .then, es decir en cada emisión de respuesta de la IA
         formChat.scrollTop = formChat.scrollHeight;
       })
       .catch((error) => {
-      // Maneja cualquier error que ocurra durante la solicitud o procesamiento de la respuesta
         const errorAnswer = "Lo lamento, en este momento no puedo responder."
         console.error("Error durante la solicitud de datos del usuario:", error);
         const systemChat = `
@@ -93,13 +90,11 @@ export const chatCharacter = (props) => {
         formChat.scrollTop = formChat.scrollHeight;
       })
 
-    //al hacer click o enter, se limpia el contenedor del input
     document.querySelector('#chat-input').value = '';
   });
-  //para activar el enter cuando utilizamos el input de chat individual
   viewEl.querySelector('#chat-input').addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
-      document.getElementById('send-button').click(); // Simula un clic en el botón
+      document.getElementById('send-button').click(); 
     }
   });
 
