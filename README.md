@@ -93,19 +93,19 @@ El proyecto se ha desarrollado en base a la siguiente estructura de archivos:
 ```
 
 ## Diseño y experiencia de usuario
-El diseño está inspirado en la estética de Hunter x Hunter y fue validado mediante pruebas de usabilidad para asegurar que la APP sea fácil y divertida de usar.
 
+El diseño está inspirado en la estética de Hunter x Hunter y fue validado mediante pruebas de usabilidad para asegurar que la APP sea fácil y divertida de usar.
 
 #### Mobile
 
-![prompting](https://github.com/MilenPG/DEV014-dataverse-chat/blob/main/src/assets/gchatMobile.png.jpeg?raw=true)
+![prompting](https://github.com/Niconsuelo/chatxhunter/blob/main/src/assets/gchatMobile.png.jpeg?raw=true)
 
 #### Tablet
 
-![prompting](https://github.com/MilenPG/DEV014-dataverse-chat/blob/main/src/assets/gchatTablet.png.jpeg?raw=true)
+![prompting](https://github.com/Niconsuelo/chatxhunter/blob/main/src/assets/gchatTablet.png.jpeg?raw=true)
 
 #### Desktop
 
-![prompting](https://github.com/MilenPG/DEV014-dataverse-chat/blob/main/src/assets/gchatDesktop.png.jpeg?raw=true)
+![prompting](https://github.com/Niconsuelo/chatxhunter/blob/main/src/assets/gchatDesktop.png.jpeg?raw=true)
 
 **_Niconsuelo 2025 &copy; Hunter X Chat_**
