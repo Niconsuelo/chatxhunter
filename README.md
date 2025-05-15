@@ -1,4 +1,4 @@
-# [Hunter X Chat](https://hunterxversexchat.vercel.app/)
+# [Hunter X Chat](https://chatxhunter-01.vercel.app/)
 
 El mundo del anime no deja de expandirse y evolucionar, capturando la imaginación de personas de todas las edades, etnias y culturas, siendo una experiencia que ha ido trasciendiendo generaciones.
 El chat de HunterX está diseñada para conectar a los aficionados del anime, ofreciendo una plataforma dinámica y accesible para explorar, descubrir y enriquecerse con este gran universo.
@@ -7,7 +7,7 @@ El chat de HunterX está diseñada para conectar a los aficionados del anime, of
 
 ## Descripción del proyecto
 
-[Hunter X Chat](https://google.com/) es una SPA intuitiva, informativa e interactiva, que permite a usuarios objetivos acceder rápidamente a información detallada y organizada sobre 24 personajes del complejo universo del anime ["Hunter x Hunter"](https://es.wikipedia.org/wiki/Hunter_%C3%97_Hunter).
+[Hunter X Chat](https://chatxhunter-01.vercel.app/) es una SPA intuitiva, informativa e interactiva, que permite a usuarios objetivos acceder rápidamente a información detallada y organizada sobre 24 personajes del complejo universo del anime ["Hunter x Hunter"](https://es.wikipedia.org/wiki/Hunter_%C3%97_Hunter).
 
 Siendo ésta una segunda versión de ChatXHunter, se ha desarrollado una nueva funcionalidad que permite interactuar con cada uno de los personajes a través de un chatbox individual. Además, como segunda instancia, se ha integrado un chatbox grupal, en donde los usuarios podrán comunicarse de manera directa con todos los personajes del anime al mismo tiempo, permitiendo enriquecer la experiencia interactiva.
 
@@ -15,7 +15,7 @@ Siendo ésta una segunda versión de ChatXHunter, se ha desarrollado una nueva f
 
 - En función de mejorar el rendimiento, la facilidad de uso y eficiencia de desarrollo, el proyecto se ha desplegado en [Vercel](https://vercel.com/).
 - Se ha implementado una integración de API externa: [OpenAI API](https://openai.com/index/openai-api/).
-- [Hunter X Chat](https://google.com/) se ha diseñado con una interfaz _responsive_, que garantiza una experiencia de usuario óptima en una amplia gama de dispositivos, aplicando desarrollo "mobile first".
+- [Hunter X Chat](https://chatxhunter-01.vercel.app/) se ha diseñado con una interfaz _responsive_, que garantiza una experiencia de usuario óptima en una amplia gama de dispositivos, aplicando desarrollo "mobile first".
 - Con el propósito de dar una experiencia más fluida a los usuarios se ha desarrollado una aplicación de página única (SPA).
 - Centrado en el usuario, se han utilizado historias de usuario para guiar cada etapa del diseño y la implementación.
 
@@ -40,7 +40,7 @@ A continuación te explico cómo realizarlo:
 
 📌 **Paso 3: Cómo usar esa API Key en el chat**
 
-- Abre [Hunter X Chat](https://google.com)
+- Abre [Hunter X Chat](https://chatxhunter-01.vercel.app/)
 - Ingresa en la pestaña "API Key".
 - En el campo vacío donde dice “Ingresa tu API Key”, pega la clave que copiaste.
 - Da clic en el botón "INGRESAR" para activar la clave.
