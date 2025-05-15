@@ -29,10 +29,10 @@ export const filterBar = () => {
         </select>
         <button id="cleaner-button" data-testid="button-clear">LIMPIAR FILTROS</button>
         <button id="stats-button">
-          <img src="https://github.com/MilenPG/DEV014-dataverse-chat/blob/image-migration/src/assets/spider_button.png?raw=true" 
+          <img src="https://github.com/Niconsuelo/chatxhunter/blob/main/src/assets/spider_button.png?raw=true" 
           alt="spider-button" class="button-img"></button>
     </div>
 `;
-  
+
   return renderFilterBar;
-}
+};
