@@ -26,13 +26,12 @@ export const communicateWithOpenAI = (messages) => {
 
   const fetchApi = fetch(URL, REQUEST)
     .then((response) => {
-    // Primero, verifica si la respuesta es exitosa
       if (!response.ok) {
-      // Lanza un error si la respuesta no es
+
         throw new Error("No se pudo obtener los datos");
       }
       return response
-        .json() // Parsea y retorna los datos JSON si es exitosa
+        .json() 
 
         .catch((error) => {
           console.error("Error durante la solicitud de datos:", error);

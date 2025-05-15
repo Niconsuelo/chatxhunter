@@ -33,8 +33,6 @@ export const filterBar = () => {
           alt="spider-button" class="button-img"></button>
     </div>
 `;
-  //const divFilterBar = document.createElement("div"); 
-  //divFilterBar.innerHTML = renderFilterBar;
   
   return renderFilterBar;
 }

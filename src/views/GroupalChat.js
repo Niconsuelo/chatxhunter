@@ -2,8 +2,7 @@ import dataset from "../data/dataset.js";
 import { timeClock } from "../lib/extraFunctions.js";
 import { communicateWithOpenAI } from "../lib/openAIAPI.js";
 
-export const groupalChat = () => { // Se removió parametro props porque no se estaba usando.
-
+export const groupalChat = () => {
   const viewEl = document.createElement("div");
   const viewChatCharacter = `
 <div class='view-character-chat'>
@@ -32,7 +31,6 @@ export const groupalChat = () => { // Se removió parametro props porque no se e
              </div>
            </div>
      `;
-    //con inner estamos reemplazando
     viewEl.querySelector("#character-group").innerHTML =
       viewEl.querySelector("#character-group").innerHTML + characterId;
   });
@@ -56,20 +54,15 @@ export const groupalChat = () => { // Se removió parametro props porque no se e
     formChatGroup.innerHTML = formChatGroup.innerHTML + userChatGroup;
     formChatGroup.scrollTop = formChatGroup.scrollHeight;
 
-    const chatAll = dataset.map((character)=> {
+    const chatAll = dataset.map((character) => {
       const OpenAIObject = {
         message: inputTextGroup,
-        nameCharacter: character.name
-      }; 
-      return communicateWithOpenAI(OpenAIObject)
-        .then((AIanswer) => {
-          // Maneja los datos obtenidos de la respuesta
-          return AIanswer.choices[0].message.content; // todo lo que se retorne dentro de un .then o un .catch, es en forma de promesa
-          // console.log(chatAnswer)
-        })
-        //*DEBERÍAMOS MANEJAR UN CATCH EN ESTE SCOPE?
-      //return communicateWithOpenAI(OpenAIObject)
-    })
+        nameCharacter: character.name,
+      };
+      return communicateWithOpenAI(OpenAIObject).then((AIanswer) => {
+        return AIanswer.choices[0].message.content;
+      });
+    });
     Promise.all(chatAll)
       .then((chatAll) => {
         chatAll.forEach((response, index) => {
@@ -83,14 +76,15 @@ export const groupalChat = () => { // Se removió parametro props porque no se e
             </div>
             <span class='time'>${timeClock()}</span>
           </div>
-          `
+          `;
           formChatGroup.innerHTML = formChatGroup.innerHTML + systemChat;
           formChatGroup.scrollTop = formChatGroup.scrollHeight;
-        })
+        });
       })
-      .catch((error) => { // PREGUNTAR DE TODOS MODOS POR LA PAUSA DE DEBUGGING QUE SE ACTIVÓ
-        console.error(error)
-        const errorAnswer = 'Lo siento, en este momento no estamos disponibles.'
+      .catch((error) => {
+        console.error(error);
+        const errorAnswer =
+          "Lo siento, en este momento no estamos disponibles.";
         const systemChat = `
       <div class='container-msg-l'>
         <p class='name-msg'>Participantes del chat</p>
@@ -101,10 +95,10 @@ export const groupalChat = () => { // Se removió parametro props porque no se e
         </div>
         <span class='time'>${timeClock()}</span>
       </div>
-      `
+      `;
         formChatGroup.innerHTML = formChatGroup.innerHTML + systemChat;
         formChatGroup.scrollTop = formChatGroup.scrollHeight;
-      })
+      });
 
     document.querySelector("#chat-input-group").value = "";
   });
@@ -116,7 +110,7 @@ export const groupalChat = () => { // Se removió parametro props porque no se e
         document.getElementById("button-chat-group").click();
       }
     });
- 
+
   return viewEl;
 };
 

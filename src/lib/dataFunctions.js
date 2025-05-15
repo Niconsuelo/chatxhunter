@@ -1,6 +1,3 @@
-// Estas funciones son ejemplos, aquí puedes desarrollar tus propias funciones.
-// NO SE MODIFICA - AQUI SOLO DEBO PONER FUNCIONES QUE ME RETORNEN DATOS.
-
 export function filterData(data, filterby, value) {
   const resultFilter = data.filter(
     (character) => character.facts[filterby] === value
